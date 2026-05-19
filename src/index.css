@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: 0.3s;
+}
+
+body.light {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+body.dark .bg-white {
+  background: #1e293b !important;
+  color: white;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+  background: #111827;
+  color: white;
+  border: 1px solid #374151;
+}
+
+body.dark .text-gray-500 {
+  color: #d1d5db !important;
+}
+
+body.dark .bg-indigo-100 {
+  background: #312e81 !important;
+  color: white !important;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
